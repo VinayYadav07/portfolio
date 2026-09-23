@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- page settings -->
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <title>Vinay Kumar Yadav | Frontend Developer</title>
+
+    <meta
+      name="description"
+      content="Portfolio of Vinay Kumar Yadav, a frontend developer from Mumbai building responsive web apps with React, Redux Toolkit and Firebase."
+    />
+
+    <meta
+      property="og:title"
+      content="Vinay Kumar Yadav | Frontend Developer"
+    />
+
+    <meta
+      property="og:description"
+      content="React, Redux Toolkit and Firebase developer from Mumbai. Three live projects. Open to frontend roles."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <!-- website icon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d6efd'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='34' fill='white'%3EV%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="top">
+    <!-- navbar -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#top" class="brand"> Vinay<span>.</span> </a>
+
+        <!-- menu links -->
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-right">
+          <!-- resume -->
+          <a
+            href="Vinay_Kumar_Yadav_Resume.pdf"
+            class="btn btn-primary btn-sm nav-resume"
+            download
+          >
+            Resume
+          </a>
+
+          <!-- dark mode button -->
+          <button
+            class="theme-btn"
+            id="themeBtn"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            🌙
+          </button>
+
+          <!-- mobile menu -->
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- home section -->
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hello">Hello, I'm</p>
+
+            <h1>Vinay <span>Kumar Yadav</span></h1>
+
+            <!-- this text is changed by javascript -->
+            <h2>
+              I'm a
+              <span id="typed">Frontend Developer</span>
+              <span class="cursor">|</span>
+            </h2>
+
+            <p class="intro">
+              I build responsive web applications with React, Redux Toolkit and
+              Firebase, and I'm currently learning full-stack development at
+              Sharpener Tech. Before this, I spent 2.6 years in IT support, so I
+              know how real users work with software.
+            </p>
+
+            <!-- home buttons -->
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary"> View Projects </a>
+
+              <a
+                href="Vinay_Kumar_Yadav_Resume.pdf"
+                class="btn btn-outline"
+                download
+              >
+                Download Resume
+              </a>
+            </div>
+
+            <!-- social links -->
+            <div class="social-links">
+              <a
+                href="https://github.com/VinayYadav07"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/vinay-yadav-593b53329/"
+                target="_blank"
+                rel="noopener"
+              >
+                LinkedIn
+              </a>
+
+              <a href="mailto:ydavvinay@gmail.com"> Email </a>
+            </div>
+          </div>
+
+          <!-- profile photo -->
+          <div class="hero-photo">
+            <img src="images/vinay.jpg" alt="Vinay Kumar Yadav" />
+
+            <span class="open-badge"> Open to work </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me -->
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+
+          <div class="about-grid reveal">
+            <div>
+              <p>
+                I'm a frontend developer from Mumbai. I build responsive web
+                applications with React, Redux Toolkit and Firebase, and I have
+                built and deployed four projects: a travel booking platform with
+                an admin panel, a mailbox client, an expense tracker and an
+                e-commerce store. I enjoy turning a design into a clean, working
+                interface and I care about small details like loading states,
+                validation and error handling.
+              </p>
+
+              <p>
+                Currently I'm learning full-stack development at Sharpener Tech.
+                Before moving into web development, I worked for 2.6 years as an
+                IT Executive, handling hardware, networks, user accounts and
+                support tickets, which taught me a lot about how real users work
+                with software.
+              </p>
+
+              <!-- small stats -->
+              <div class="stats">
+                <div class="stat">
+                  <strong>4</strong>
+                  <span>Projects deployed</span>
+                </div>
+
+                <div class="stat">
+                  <strong>2.6</strong>
+                  <span>Years in IT</span>
+                </div>
+
+                <div class="stat">
+                  <strong>2025</strong>
+                  <span>Started web dev</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- work journey -->
+            <div class="journey">
+              <h3>My journey</h3>
+
+              <ol class="steps">
+                <li>
+                  <span class="step-year"> 2020 – 2023 </span>
+
+                  <strong> Delivery Executive </strong>
+
+                  <span> Goldmine Logistics, Mumbai </span>
+                </li>
+
+                <li>
+                  <span class="step-year"> 2023 – 2025 </span>
+
+                  <strong> IT Executive </strong>
+
+                  <span>
+                    Fintree Finance, Bombay Stock Exchange, Total Group
+                  </span>
+                </li>
+
+                <li class="current">
+                  <span class="step-year"> 2025 – now </span>
+
+                  <strong> Frontend Developer </strong>
+
+                  <span>
+                    Full Stack programme at Sharpener Tech · BSc IT, Vidyalankar
+                  </span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="section gray" id="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+
+          <!-- main skills -->
+          <div class="main-stack reveal">
+            <span>React.js</span>
+            <span>JavaScript</span>
+            <span>Redux Toolkit</span>
+            <span>Firebase</span>
+          </div>
+
+          <div class="skills-grid">
+            <!-- frontend -->
+            <div class="skill-box reveal">
+              <h3>
+                <span class="skill-icon">🎨</span>
+                Frontend
+              </h3>
+
+              <div class="badges">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript (ES6+)</span>
+                <span>React.js</span>
+                <span>Next.js</span>
+                <span>Redux Toolkit</span>
+                <span>Context API</span>
+                <span>React Router</span>
+                <span>Bootstrap</span>
+                <span>React Bootstrap</span>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+
+            <!-- backend -->
+            <div class="skill-box reveal">
+              <h3>
+                <span class="skill-icon">🔥</span>
+                Backend &amp; Database
+              </h3>
+
+              <div class="badges">
+                <span>Firebase Authentication</span>
+                <span>Realtime Database</span>
+                <span>Firestore</span>
+                <span>REST APIs</span>
+                <span>Axios</span>
+              </div>
+            </div>
+
+            <!-- tools -->
+            <div class="skill-box reveal">
+              <h3>
+                <span class="skill-icon">🛠️</span>
+                Tools &amp; Fundamentals
+              </h3>
+
+              <div class="badges">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Vite</span>
+                <span>VS Code</span>
+                <span>Vercel</span>
+                <span>Data Structures &amp; Algorithms</span>
+                <span>Excel</span>
+                <span>Basic SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+
+          <p class="section-intro">
+            Four apps I built and deployed. Click the small images to see more
+            screens.
+          </p>
+
+          <!-- project 1 -->
+          <article class="showcase reveal">
+            <div class="gallery">
+              <img
+                class="gallery-main"
+                src="images/travelnest-home.webp"
+                alt="TravelNest home page"
+              />
+
+              <div class="thumbs">
+                <img
+                  src="images/travelnest-home.webp"
+                  alt="Home"
+                  class="active"
+                />
+
+                <img
+                  src="images/travelnest-listings.webp"
+                  alt="Listings with filters"
+                />
+
+                <img
+                  src="images/travelnest-detail.webp"
+                  alt="Property detail"
+                />
+
+                <img src="images/travelnest-bookings.webp" alt="My Bookings" />
+
+                <img src="images/travelnest-admin.webp" alt="Admin dashboard" />
+
+                <img
+                  src="images/travelnest-admin-login.webp"
+                  alt="Admin login"
+                />
+              </div>
+            </div>
+
+            <div class="showcase-text">
+              <span class="tag"> Featured project </span>
+
+              <h3>TravelNest</h3>
+
+              <p class="tagline">
+                Travel-stay booking website with an admin panel
+              </p>
+
+              <p>
+                Users can search and filter stays like villas, houseboats and
+                cottages, view details, add to cart and book. The admin panel
+                manages listings and approves or rejects bookings, and the user
+                sees the status on their My Bookings page.
+              </p>
+
+              <ul class="features">
+                <li>Search, category and price filters, sorting</li>
+
+                <li>Login with Firebase Authentication and protected routes</li>
+
+                <li>Booking form that calculates nights and total price</li>
+
+                <li>
+                  Separate admin panel: listings, categories, approve / reject
+                  bookings
+                </li>
+              </ul>
+
+              <div class="badges small">
+                <span>React</span>
+                <span>React Router</span>
+                <span>Bootstrap</span>
+                <span>Axios</span>
+                <span>Firebase</span>
+              </div>
+
+              <div class="card-links">
+                <a
+                  href="https://travelnest-user.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary btn-sm"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://travelnest-admin.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline btn-sm"
+                >
+                  Admin Panel
+                </a>
+
+                <a
+                  href="https://github.com/VinayYadav07/travelnest-user"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline btn-sm"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- project 2 -->
+          <article class="showcase reverse reveal">
+            <div class="gallery">
+              <img
+                class="gallery-main"
+                src="images/mailbox-compose.webp"
+                alt="Mailbox Client compose mail with rich text editor"
+              />
+
+              <div class="thumbs">
+                <img
+                  src="images/mailbox-compose.webp"
+                  alt="Compose mail"
+                  class="active"
+                />
+
+                <img
+                  src="images/mailbox-inbox.webp"
+                  alt="Inbox with unread count"
+                />
+
+                <img src="images/mailbox-sent.webp" alt="Sent mail" />
+
+                <img src="images/mailbox-login.webp" alt="Login page" />
+              </div>
+            </div>
+
+            <div class="showcase-text">
+              <h3>Mailbox Client</h3>
+
+              <p class="tagline">
+                Email app to send and receive mail between registered users
+              </p>
+
+              <p>
+                A responsive email application built with React and Firebase.
+                Users create an account, log in, compose and send mail to other
+                registered users, read their inbox and check their sent mail.
+              </p>
+
+              <ul class="features">
+                <li>Compose with To, Cc/Bcc, subject and a rich text editor</li>
+
+                <li>
+                  Inbox with unread count, read and delete mail, Sent, Starred,
+                  Drafts and custom folders
+                </li>
+
+                <li>
+                  Auth and mail state handled with the Context API and a custom
+                  hook
+                </li>
+
+                <li>
+                  Firebase Authentication and Firestore, protected routes,
+                  config kept in environment variables
+                </li>
+              </ul>
+
+              <div class="badges small">
+                <span>React</span>
+                <span>Vite</span>
+                <span>Context API</span>
+                <span>React Router</span>
+                <span>React Bootstrap</span>
+                <span>Firebase Firestore</span>
+              </div>
+
+              <div class="card-links">
+                <a
+                  href="https://mailbox-client-brown.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary btn-sm"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/VinayYadav07/mailbox-client"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline btn-sm"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- project 3 -->
+          <article class="showcase reveal">
+            <div class="gallery">
+              <img
+                class="gallery-main"
+                src="images/expense-list.webp"
+                alt="Expense Tracker expenses page"
+              />
+
+              <div class="thumbs">
+                <img
+                  src="images/expense-list.webp"
+                  alt="Expenses page"
+                  class="active"
+                />
+
+                <img src="images/expense-home.webp" alt="Home after login" />
+
+                <img
+                  src="images/expense-dark.webp"
+                  alt="Profile in dark mode"
+                />
+
+                <img src="images/expense-login.webp" alt="Login page" />
+              </div>
+            </div>
+
+            <div class="showcase-text">
+              <h3>Expense Tracker</h3>
+
+              <p class="tagline">Personal finance app with Redux Toolkit</p>
+
+              <p>
+                Add, edit and delete daily expenses and watch the total update.
+                Includes login with password reset, dark mode, CSV/Excel export
+                and protected routes.
+              </p>
+
+              <ul class="features">
+                <li>
+                  Redux Toolkit slices for auth, expenses, theme and
+                  notifications
+                </li>
+
+                <li>Firebase Authentication and Realtime Database</li>
+
+                <li>Export expenses to CSV and Excel</li>
+
+                <li>Light / dark mode with a saved preference</li>
+              </ul>
+
+              <div class="badges small">
+                <span>React</span>
+                <span>Redux Toolkit</span>
+                <span>React Router</span>
+                <span>React Bootstrap</span>
+                <span>Firebase</span>
+              </div>
+
+              <div class="card-links">
+                <a
+                  href="https://expense-tracker-mocha-two-67.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary btn-sm"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/VinayYadav07/expense-tracker"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline btn-sm"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- project 4 -->
+          <article class="showcase reverse reveal">
+            <div class="gallery">
+              <img
+                class="gallery-main"
+                src="images/generics-store.webp"
+                alt="E-Commerce Website store page"
+              />
+
+              <div class="thumbs">
+                <img
+                  src="images/generics-store.webp"
+                  alt="Store"
+                  class="active"
+                />
+
+                <img
+                  src="images/generics-merch.webp"
+                  alt="Add to cart and merch"
+                />
+
+                <img src="images/generics-home.webp" alt="Home with tours" />
+
+                <img src="images/generics-signup.webp" alt="Sign up page" />
+              </div>
+            </div>
+
+            <div class="showcase-text">
+              <h3>E-Commerce Website</h3>
+
+              <p class="tagline">
+                Online music store built with the Context API
+              </p>
+
+              <p>
+                An e-commerce site for a music store. Users browse albums and
+                merchandise, view product details, add items to the cart and log
+                in. Cart and login data are shared using the Context API and
+                stored with Firebase.
+              </p>
+
+              <ul class="features">
+                <li>Product list and product detail pages with React Router</li>
+
+                <li>Cart with quantities and total, saved in localStorage</li>
+
+                <li>Login and protected account pages with Firebase</li>
+
+                <li>Contact form and a movies page saved to Firebase</li>
+              </ul>
+
+              <div class="badges small">
+                <span>React</span>
+                <span>Context API</span>
+                <span>React Router</span>
+                <span>React Bootstrap</span>
+                <span>Firebase</span>
+              </div>
+
+              <div class="card-links">
+                <a
+                  href="https://the-generics-music-store.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary btn-sm"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/VinayYadav07/the-generics-music-store"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline btn-sm"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- github link -->
+          <div class="more-projects">
+            <a
+              href="https://github.com/VinayYadav07"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline"
+            >
+              See more on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="section" id="contact">
+        <div class="container contact-inner">
+          <h2 class="section-title">Contact Me</h2>
+
+          <p>
+            I'm looking for a frontend developer role. If you have an opening or
+            a project in mind, feel free to reach out — I usually reply within a
+            day.
+          </p>
+
+          <div class="contact-grid reveal">
+            <!-- contact form -->
+            <form class="contact-form" id="contactForm">
+              <label>
+                Your name
+
+                <input
+                  type="text"
+                  id="fromName"
+                  placeholder="Enter your name"
+                  required
+                />
+              </label>
+
+              <label>
+                Your email
+
+                <input
+                  type="email"
+                  id="fromEmail"
+                  placeholder="you@example.com"
+                  required
+                />
+              </label>
+
+              <label>
+                Message
+
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Hi Vinay, ..."
+                  required
+                ></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+
+              <p class="form-note">
+                This opens your email app with the message ready to send.
+              </p>
+            </form>
+
+            <!-- contact details -->
+            <div class="contact-links">
+              <a href="mailto:ydavvinay@gmail.com" class="contact-item">
+                📧 ydavvinay@gmail.com
+              </a>
+
+              <a href="tel:+918070401290" class="contact-item">
+                📞 +91 80704 01290
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/vinay-yadav-593b53329/"
+                target="_blank"
+                rel="noopener"
+                class="contact-item"
+              >
+                💼 LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/VinayYadav07"
+                target="_blank"
+                rel="noopener"
+                class="contact-item"
+              >
+                💻 GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a
+          href="https://github.com/VinayYadav07"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/vinay-yadav-593b53329/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+
+        <a href="mailto:ydavvinay@gmail.com"> Email </a>
+      </div>
+
+      <p>
+        © <span id="year">2026</span>
+        Vinay Kumar Yadav &nbsp;·&nbsp; Frontend Developer — React, Redux
+        Toolkit &amp; Firebase
+      </p>
+
+      <p class="made-in">Made with ❤️ in Mumbai</p>
+    </footer>
+
+    <!-- back to top button -->
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+      ↑
+    </button>
+
+    <!-- javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
