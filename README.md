@@ -6,7 +6,7 @@ My personal portfolio website built using HTML, CSS and JavaScript.
 
 - `index.html` – Website content
 - `style.css` – Website styling and responsive design
-- `script.js` – Website interactions and functionality
+- `script.js` – Dark mode, menu, typing effect, auto-changing project screenshots and copy email
 - `images/` – Profile photo and project images
 - `Vinay_Kumar_Yadav_Resume.pdf` – Resume
 

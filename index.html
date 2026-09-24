@@ -13,17 +13,14 @@
 
     <meta
       name="description"
-      content="Portfolio of Vinay Kumar Yadav, a frontend developer from Mumbai building responsive web apps with React, Redux Toolkit and Firebase."
+      content="Portfolio of Vinay Kumar Yadav, a frontend developer from Mumbai building responsive web apps with React, Next.js, Redux Toolkit and Firebase."
     />
 
-    <meta
-      property="og:title"
-      content="Vinay Kumar Yadav | Frontend Developer"
-    />
+    <meta property="og:title" content="Vinay Kumar Yadav | Frontend Developer" />
 
     <meta
       property="og:description"
-      content="React, Redux Toolkit and Firebase developer from Mumbai. Three live projects. Open to frontend roles."
+      content="React, Next.js, Redux Toolkit and Firebase developer from Mumbai. Five live projects. Open to frontend roles."
     />
 
     <meta property="og:type" content="website" />
@@ -36,9 +33,7 @@
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -49,44 +44,33 @@
   </head>
 
   <body id="top">
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <!-- navbar -->
     <header class="navbar">
       <div class="container nav-inner">
-        <a href="#top" class="brand"> Vinay<span>.</span> </a>
+        <a href="#top" class="brand code-brand" aria-label="Vinay Yadav, back to top">
+          <span class="brand-dot"></span>
+          <span class="brand-tag">&lt;</span>
+          VinayYadav
+          <span class="brand-tag">/&gt;</span>
+        </a>
 
         <!-- menu links -->
         <nav>
           <ul class="nav-links" id="navLinks">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-
-            <li>
-              <a href="#about">About</a>
-            </li>
-
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
         <div class="nav-right">
-          <!-- resume -->
-          <a
-            href="Vinay_Kumar_Yadav_Resume.pdf"
-            class="btn btn-primary btn-sm nav-resume"
-            download
-          >
-            Resume
+          <a href="#contact" class="btn btn-primary btn-sm nav-resume">
+            Let's talk
           </a>
 
           <!-- dark mode button -->
@@ -113,69 +97,74 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <!-- home section -->
       <section class="hero" id="home">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <p class="hello">Hello, I'm</p>
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-text">
+              <span class="status-pill">Open to work</span>
 
-            <h1>Vinay <span>Kumar Yadav</span></h1>
+              <h1 class="hero-big">
+                Hi, I'm <span class="grad-text">Vinay Kumar Yadav</span>.
+              </h1>
 
-            <!-- this text is changed by javascript -->
-            <h2>
-              I'm a
-              <span id="typed">Frontend Developer</span>
-              <span class="cursor">|</span>
-            </h2>
+              <!-- this text is changed by javascript -->
+              <p class="terminal-line">
+                <span class="prompt">$</span>
+                I'm a <span id="typed">Frontend Developer</span><span class="cursor">|</span>
+              </p>
 
-            <p class="intro">
-              I build responsive web applications with React, Redux Toolkit and
-              Firebase, and I'm currently learning full-stack development at
-              Sharpener Tech. Before this, I spent 2.6 years in IT support, so I
-              know how real users work with software.
-            </p>
+              <p class="intro">
+                I build responsive web applications with React, Next.js, Redux
+                Toolkit and Firebase, and I'm currently learning full-stack development
+                at Sharpener Tech. Before this, I spent 2.6 years in IT support,
+                so I know how real users work with software.
+              </p>
 
-            <!-- home buttons -->
-            <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary"> View Projects </a>
-
-              <a
-                href="Vinay_Kumar_Yadav_Resume.pdf"
-                class="btn btn-outline"
-                download
-              >
-                Download Resume
-              </a>
+              <!-- home buttons -->
+              <div class="hero-buttons">
+                <a href="#work" class="btn btn-primary"> View my work </a>
+                <a href="#contact" class="btn btn-outline"> Get in touch </a>
+              </div>
             </div>
 
-            <!-- social links -->
-            <div class="social-links">
-              <a
-                href="https://github.com/VinayYadav07"
-                target="_blank"
-                rel="noopener"
-              >
-                GitHub
-              </a>
+            <!-- code card with stats -->
+            <div class="code-card" aria-label="Quick summary about Vinay">
+              <div class="code-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="code-tab">about-me.js</span>
+              </div>
 
-              <a
-                href="https://www.linkedin.com/in/vinay-yadav-593b53329/"
-                target="_blank"
-                rel="noopener"
-              >
-                LinkedIn
-              </a>
+<pre class="code-body"><code><span class="k">const</span> vinay = {
+  role: <span class="s">'Frontend Developer'</span>,
+  city: <span class="s">'Mumbai'</span>,
+  stack: [
+    <span class="s">'React.js'</span>, <span class="s">'Next.js'</span>,
+    <span class="s">'Redux Toolkit'</span>, <span class="s">'Firebase'</span>
+  ],
+  before: <span class="s">'2.6 years as IT Executive'</span>,
+  learning: <span class="s">'Full Stack @ Sharpener Tech'</span>,
+  openTo: <span class="s">'frontend roles'</span>,
+};</code></pre>
 
-              <a href="mailto:ydavvinay@gmail.com"> Email </a>
+              <div class="card-stats">
+                <div>
+                  <strong>5</strong>
+                  <span>Projects deployed</span>
+                </div>
+                <div>
+                  <strong>2.6</strong>
+                  <span>Years in IT</span>
+                </div>
+                <div>
+                  <strong>2025</strong>
+                  <span>Started web dev</span>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <!-- profile photo -->
-          <div class="hero-photo">
-            <img src="images/vinay.jpg" alt="Vinay Kumar Yadav" />
-
-            <span class="open-badge"> Open to work </span>
           </div>
         </div>
       </section>
@@ -183,80 +172,61 @@
       <!-- about me -->
       <section class="section" id="about">
         <div class="container">
-          <h2 class="section-title">About Me</h2>
+          <div class="about-split reveal">
+            <div class="about-left">
+              <div class="section-head-left">
+                <p class="section-label">About</p>
+                <h2 class="about-heading">
+                  From fixing systems to <span class="grad-text">building</span> them.
+                </h2>
+              </div>
 
-          <div class="about-grid reveal">
-            <div>
-              <p>
-                I'm a frontend developer from Mumbai. I build responsive web
-                applications with React, Redux Toolkit and Firebase, and I have
-                built and deployed four projects: a travel booking platform with
-                an admin panel, a mailbox client, an expense tracker and an
-                e-commerce store. I enjoy turning a design into a clean, working
-                interface and I care about small details like loading states,
-                validation and error handling.
-              </p>
-
-              <p>
-                Currently I'm learning full-stack development at Sharpener Tech.
-                Before moving into web development, I worked for 2.6 years as an
-                IT Executive, handling hardware, networks, user accounts and
-                support tickets, which taught me a lot about how real users work
-                with software.
-              </p>
-
-              <!-- small stats -->
-              <div class="stats">
-                <div class="stat">
-                  <strong>4</strong>
-                  <span>Projects deployed</span>
-                </div>
-
-                <div class="stat">
-                  <strong>2.6</strong>
-                  <span>Years in IT</span>
-                </div>
-
-                <div class="stat">
-                  <strong>2025</strong>
-                  <span>Started web dev</span>
-                </div>
+              <div class="about-photo-wrap">
+                <img
+                  src="images/vinay.jpg"
+                  alt="Vinay Kumar Yadav"
+                  class="about-photo"
+                />
               </div>
             </div>
 
-            <!-- work journey -->
-            <div class="journey">
-              <h3>My journey</h3>
+            <div class="about-right">
+              <p>
+                I'm a <strong>frontend developer from Mumbai</strong>. I build
+                responsive web applications with React, Next.js, Redux Toolkit
+                and Firebase, and I have built and deployed five projects: a travel
+                booking platform with an admin panel, a Next.js products store
+                with JWT login, a mailbox client, an expense tracker and an
+                e-commerce store. I enjoy turning a design
+                into a clean, working interface and I care about small details
+                like <strong>loading states, validation and error handling</strong>.
+              </p>
 
-              <ol class="steps">
-                <li>
-                  <span class="step-year"> 2020 – 2023 </span>
+              <p>
+                Currently I'm learning full-stack development at
+                <strong>Sharpener Tech</strong>. Before moving into web
+                development, I worked for 2.6 years as an
+                <strong>IT Executive</strong>, handling hardware, networks, user
+                accounts and support tickets, which taught me a lot about how
+                real users work with software.
+              </p>
 
-                  <strong> Delivery Executive </strong>
+              <dl class="now-table">
+                <div>
+                  <dt>building</dt>
+                  <dd>TravelNest, a travel booking site with an admin panel</dd>
+                </div>
 
-                  <span> Goldmine Logistics, Mumbai </span>
-                </li>
+                <div>
+                  <dt>learning</dt>
+                  <dd>Full Stack Web Development at Sharpener Tech</dd>
+                </div>
 
-                <li>
-                  <span class="step-year"> 2023 – 2025 </span>
-
-                  <strong> IT Executive </strong>
-
-                  <span>
-                    Fintree Finance, Bombay Stock Exchange, Total Group
-                  </span>
-                </li>
-
-                <li class="current">
-                  <span class="step-year"> 2025 – now </span>
-
-                  <strong> Frontend Developer </strong>
-
-                  <span>
-                    Full Stack programme at Sharpener Tech · BSc IT, Vidyalankar
-                  </span>
-                </li>
-              </ol>
+                <div>
+                  <dt>open_to</dt>
+                  <dd>Frontend developer roles</dd>
+                </div>
+              </dl>
             </div>
           </div>
         </div>
@@ -265,25 +235,17 @@
       <!-- skills -->
       <section class="section gray" id="skills">
         <div class="container">
-          <h2 class="section-title">Skills</h2>
-
-          <!-- main skills -->
-          <div class="main-stack reveal">
-            <span>React.js</span>
-            <span>JavaScript</span>
-            <span>Redux Toolkit</span>
-            <span>Firebase</span>
+          <div class="section-head-left">
+            <p class="section-label">Skills</p>
+            <h2>What I work with.</h2>
           </div>
 
-          <div class="skills-grid">
-            <!-- frontend -->
+          <div class="skills-bento">
             <div class="skill-box reveal">
-              <h3>
-                <span class="skill-icon">🎨</span>
-                Frontend
-              </h3>
-
-              <div class="badges">
+              <span class="skill-code">FE</span>
+              <h3>Frontend</h3>
+              <p class="skill-desc">Components, state and routing.</p>
+              <div class="badges small">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript (ES6+)</span>
@@ -292,44 +254,67 @@
                 <span>Redux Toolkit</span>
                 <span>Context API</span>
                 <span>React Router</span>
+              </div>
+            </div>
+
+            <div class="skill-box reveal">
+              <span class="skill-code">UI</span>
+              <h3>Styling</h3>
+              <p class="skill-desc">Layouts that work on every screen.</p>
+              <div class="badges small">
                 <span>Bootstrap</span>
                 <span>React Bootstrap</span>
                 <span>Responsive Design</span>
               </div>
             </div>
 
-            <!-- backend -->
             <div class="skill-box reveal">
-              <h3>
-                <span class="skill-icon">🔥</span>
-                Backend &amp; Database
-              </h3>
-
-              <div class="badges">
+              <span class="skill-code">BE</span>
+              <h3>Backend &amp; Database</h3>
+              <p class="skill-desc">Login, data and APIs.</p>
+              <div class="badges small">
                 <span>Firebase Authentication</span>
                 <span>Realtime Database</span>
                 <span>Firestore</span>
+                <span>JWT (jose)</span>
                 <span>REST APIs</span>
                 <span>Axios</span>
               </div>
             </div>
 
-            <!-- tools -->
             <div class="skill-box reveal">
-              <h3>
-                <span class="skill-icon">🛠️</span>
-                Tools &amp; Fundamentals
-              </h3>
-
-              <div class="badges">
+              <span class="skill-code">TL</span>
+              <h3>Tools</h3>
+              <p class="skill-desc">From code to live website.</p>
+              <div class="badges small">
                 <span>Git</span>
                 <span>GitHub</span>
                 <span>Vite</span>
                 <span>VS Code</span>
                 <span>Vercel</span>
+              </div>
+            </div>
+
+            <div class="skill-box reveal">
+              <span class="skill-code">DS</span>
+              <h3>Fundamentals</h3>
+              <p class="skill-desc">The basics behind good code.</p>
+              <div class="badges small">
                 <span>Data Structures &amp; Algorithms</span>
                 <span>Excel</span>
                 <span>Basic SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-box reveal">
+              <span class="skill-big">2.6</span>
+              <h3>Years in IT</h3>
+              <p class="skill-desc">Supporting real users at work.</p>
+              <div class="badges small">
+                <span>Hardware</span>
+                <span>Networks</span>
+                <span>User accounts</span>
+                <span>Support tickets</span>
               </div>
             </div>
           </div>
@@ -337,470 +322,408 @@
       </section>
 
       <!-- projects -->
-      <section class="section" id="projects">
+      <section class="section" id="work">
         <div class="container">
-          <h2 class="section-title">Projects</h2>
+          <div class="section-head-left">
+            <p class="section-label">Selected work</p>
+            <h2>Things I've <span class="grad-text">built</span>.</h2>
+            <p class="head-intro">
+              Five apps I built and deployed. Screenshots change on their own;
+              click the small images to see more screens.
+            </p>
+          </div>
 
-          <p class="section-intro">
-            Four apps I built and deployed. Click the small images to see more
-            screens.
-          </p>
-
-          <!-- project 1 -->
-          <article class="showcase reveal">
-            <div class="gallery">
-              <img
-                class="gallery-main"
-                src="images/travelnest-home.webp"
-                alt="TravelNest home page"
-              />
-
-              <div class="thumbs">
-                <img
-                  src="images/travelnest-home.webp"
-                  alt="Home"
-                  class="active"
-                />
-
-                <img
-                  src="images/travelnest-listings.webp"
-                  alt="Listings with filters"
-                />
-
-                <img
-                  src="images/travelnest-detail.webp"
-                  alt="Property detail"
-                />
-
-                <img src="images/travelnest-bookings.webp" alt="My Bookings" />
-
-                <img src="images/travelnest-admin.webp" alt="Admin dashboard" />
-
-                <img
-                  src="images/travelnest-admin-login.webp"
-                  alt="Admin login"
-                />
-              </div>
-            </div>
-
-            <div class="showcase-text">
-              <span class="tag"> Featured project </span>
-
-              <h3>TravelNest</h3>
-
-              <p class="tagline">
-                Travel-stay booking website with an admin panel
-              </p>
-
-              <p>
-                Users can search and filter stays like villas, houseboats and
-                cottages, view details, add to cart and book. The admin panel
-                manages listings and approves or rejects bookings, and the user
-                sees the status on their My Bookings page.
-              </p>
-
-              <ul class="features">
-                <li>Search, category and price filters, sorting</li>
-
-                <li>Login with Firebase Authentication and protected routes</li>
-
-                <li>Booking form that calculates nights and total price</li>
-
-                <li>
-                  Separate admin panel: listings, categories, approve / reject
-                  bookings
-                </li>
-              </ul>
-
-              <div class="badges small">
-                <span>React</span>
-                <span>React Router</span>
-                <span>Bootstrap</span>
-                <span>Axios</span>
-                <span>Firebase</span>
+          <div class="work-list">
+            <!-- project 1 -->
+            <article class="work-card featured reveal">
+              <div class="code-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="code-file">travelnest</span>
+                <span class="tag">Featured project</span>
               </div>
 
-              <div class="card-links">
-                <a
-                  href="https://travelnest-user.vercel.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-primary btn-sm"
-                >
-                  Live Demo
-                </a>
+              <div class="work-body">
+                <div class="gallery">
+                  <img
+                    class="gallery-main"
+                    src="images/travelnest-home.webp"
+                    alt="TravelNest home page"
+                  />
+                  <div class="thumbs">
+                    <img src="images/travelnest-home.webp" alt="TravelNest home page" class="active" />
+                    <img src="images/travelnest-listings.webp" alt="Listings with filters" />
+                    <img src="images/travelnest-detail.webp" alt="Property detail" />
+                    <img src="images/travelnest-bookings.webp" alt="My Bookings" />
+                    <img src="images/travelnest-admin.webp" alt="Admin dashboard" />
+                    <img src="images/travelnest-admin-login.webp" alt="Admin login" />
+                  </div>
+                </div>
 
-                <a
-                  href="https://travelnest-admin.vercel.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline btn-sm"
-                >
-                  Admin Panel
-                </a>
-
-                <a
-                  href="https://github.com/VinayYadav07/travelnest-user"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline btn-sm"
-                >
-                  GitHub
-                </a>
+                <div class="showcase-text">
+                  <h3>TravelNest</h3>
+                  <p class="tagline">
+                    Travel-stay booking website with an admin panel
+                  </p>
+                  <p>
+                    Users can search and filter stays like villas, houseboats and
+                    cottages, view details, add to cart and book. The admin panel
+                    manages listings and approves or rejects bookings, and the
+                    user sees the status on their My Bookings page.
+                  </p>
+                  <ul class="features">
+                    <li>Search, category and price filters, sorting</li>
+                    <li>Login with Firebase Authentication and protected routes</li>
+                    <li>Booking form that calculates nights and total price</li>
+                    <li>Separate admin panel: listings, categories, approve / reject bookings</li>
+                  </ul>
+                  <div class="badges small">
+                    <span>React</span>
+                    <span>React Router</span>
+                    <span>Bootstrap</span>
+                    <span>Axios</span>
+                    <span>Firebase</span>
+                  </div>
+                  <div class="card-links">
+                    <a href="https://travelnest-user.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://travelnest-admin.vercel.app/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Admin Panel</a>
+                    <a href="https://github.com/VinayYadav07/travelnest-user" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub (User)</a>
+                    <a href="https://github.com/VinayYadav07/travelnest-admin" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub (Admin)</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- project 2 -->
-          <article class="showcase reverse reveal">
-            <div class="gallery">
-              <img
-                class="gallery-main"
-                src="images/mailbox-compose.webp"
-                alt="Mailbox Client compose mail with rich text editor"
-              />
-
-              <div class="thumbs">
-                <img
-                  src="images/mailbox-compose.webp"
-                  alt="Compose mail"
-                  class="active"
-                />
-
-                <img
-                  src="images/mailbox-inbox.webp"
-                  alt="Inbox with unread count"
-                />
-
-                <img src="images/mailbox-sent.webp" alt="Sent mail" />
-
-                <img src="images/mailbox-login.webp" alt="Login page" />
-              </div>
-            </div>
-
-            <div class="showcase-text">
-              <h3>Mailbox Client</h3>
-
-              <p class="tagline">
-                Email app to send and receive mail between registered users
-              </p>
-
-              <p>
-                A responsive email application built with React and Firebase.
-                Users create an account, log in, compose and send mail to other
-                registered users, read their inbox and check their sent mail.
-              </p>
-
-              <ul class="features">
-                <li>Compose with To, Cc/Bcc, subject and a rich text editor</li>
-
-                <li>
-                  Inbox with unread count, read and delete mail, Sent, Starred,
-                  Drafts and custom folders
-                </li>
-
-                <li>
-                  Auth and mail state handled with the Context API and a custom
-                  hook
-                </li>
-
-                <li>
-                  Firebase Authentication and Firestore, protected routes,
-                  config kept in environment variables
-                </li>
-              </ul>
-
-              <div class="badges small">
-                <span>React</span>
-                <span>Vite</span>
-                <span>Context API</span>
-                <span>React Router</span>
-                <span>React Bootstrap</span>
-                <span>Firebase Firestore</span>
+            <!-- project 2: NextMart -->
+            <article class="work-card reveal">
+              <div class="code-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="code-file">nextmart</span>
               </div>
 
-              <div class="card-links">
-                <a
-                  href="https://mailbox-client-brown.vercel.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-primary btn-sm"
-                >
-                  Live Demo
-                </a>
+              <div class="work-body">
+                <div class="gallery">
+                  <img
+                    class="gallery-main"
+                    src="images/nextmart-products.webp"
+                    alt="NextMart products page"
+                  />
+                  <div class="thumbs">
+                    <img src="images/nextmart-products.webp" alt="Products page" class="active" />
+                    <img src="images/nextmart-home.webp" alt="Home page" />
+                    <img src="images/nextmart-login.webp" alt="Sign in page" />
+                  </div>
+                </div>
 
-                <a
-                  href="https://github.com/VinayYadav07/mailbox-client"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline btn-sm"
-                >
-                  GitHub
-                </a>
+                <div class="showcase-text">
+                  <h3>NextMart</h3>
+                  <p class="tagline">Online shopping store with secure login, built with Next.js</p>
+                  <p>
+                    A products store built with the Next.js 14 App Router to learn
+                    how authentication really works. Login creates a JWT signed
+                    with jose and stores it in an httpOnly cookie, and middleware
+                    checks it before protected pages load.
+                  </p>
+                  <ul class="features">
+                    <li>JWT login with jose, stored in an httpOnly cookie</li>
+                    <li>Middleware protects pages before they render</li>
+                    <li>Products from the DummyJSON API using server components</li>
+                    <li>Loading skeletons and a custom 404 page</li>
+                  </ul>
+                  <div class="badges small">
+                    <span>Next.js 14</span>
+                    <span>App Router</span>
+                    <span>React 18</span>
+                    <span>jose (JWT)</span>
+                    <span>Middleware</span>
+                    <span>CSS</span>
+                  </div>
+                  <div class="card-links">
+                    <a href="https://nextmart-gold.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://github.com/VinayYadav07/nextmart" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+                  </div>
+                  <p class="demo-note">Demo account: <code>test@gmail.com</code> / <code>123456</code></p>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- project 3 -->
-          <article class="showcase reveal">
-            <div class="gallery">
-              <img
-                class="gallery-main"
-                src="images/expense-list.webp"
-                alt="Expense Tracker expenses page"
-              />
-
-              <div class="thumbs">
-                <img
-                  src="images/expense-list.webp"
-                  alt="Expenses page"
-                  class="active"
-                />
-
-                <img src="images/expense-home.webp" alt="Home after login" />
-
-                <img
-                  src="images/expense-dark.webp"
-                  alt="Profile in dark mode"
-                />
-
-                <img src="images/expense-login.webp" alt="Login page" />
-              </div>
-            </div>
-
-            <div class="showcase-text">
-              <h3>Expense Tracker</h3>
-
-              <p class="tagline">Personal finance app with Redux Toolkit</p>
-
-              <p>
-                Add, edit and delete daily expenses and watch the total update.
-                Includes login with password reset, dark mode, CSV/Excel export
-                and protected routes.
-              </p>
-
-              <ul class="features">
-                <li>
-                  Redux Toolkit slices for auth, expenses, theme and
-                  notifications
-                </li>
-
-                <li>Firebase Authentication and Realtime Database</li>
-
-                <li>Export expenses to CSV and Excel</li>
-
-                <li>Light / dark mode with a saved preference</li>
-              </ul>
-
-              <div class="badges small">
-                <span>React</span>
-                <span>Redux Toolkit</span>
-                <span>React Router</span>
-                <span>React Bootstrap</span>
-                <span>Firebase</span>
+            <!-- project 3 -->
+            <article class="work-card reveal">
+              <div class="code-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="code-file">mailbox-client</span>
               </div>
 
-              <div class="card-links">
-                <a
-                  href="https://expense-tracker-mocha-two-67.vercel.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-primary btn-sm"
-                >
-                  Live Demo
-                </a>
+              <div class="work-body">
+                <div class="gallery">
+                  <img
+                    class="gallery-main"
+                    src="images/mailbox-compose.webp"
+                    alt="Compose mail with rich text editor"
+                  />
+                  <div class="thumbs">
+                    <img src="images/mailbox-compose.webp" alt="Compose mail with rich text editor" class="active" />
+                    <img src="images/mailbox-inbox.webp" alt="Inbox with unread count and folders" />
+                    <img src="images/mailbox-sent.webp" alt="Sent mail" />
+                    <img src="images/mailbox-login.webp" alt="Login page" />
+                  </div>
+                </div>
 
-                <a
-                  href="https://github.com/VinayYadav07/expense-tracker"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline btn-sm"
-                >
-                  GitHub
-                </a>
+                <div class="showcase-text">
+                  <h3>Mailbox Client</h3>
+                  <p class="tagline">
+                    Email app to send and receive mail between registered users
+                  </p>
+                  <p>
+                    A responsive email application built with React and
+                    Firebase. Users create an account, log in, compose and send
+                    mail to other registered users, read their inbox and check
+                    their sent mail.
+                  </p>
+                  <ul class="features">
+                    <li>Compose with To, Cc/Bcc, subject and a rich text editor</li>
+                    <li>Inbox with unread count, read and delete mail, Sent, Starred, Drafts and custom folders</li>
+                    <li>Auth and mail state handled with the Context API and a custom hook</li>
+                    <li>Firebase Authentication and Firestore, protected routes, config kept in environment variables</li>
+                  </ul>
+                  <div class="badges small">
+                    <span>React</span>
+                    <span>Vite</span>
+                    <span>Context API</span>
+                    <span>React Router</span>
+                    <span>React Bootstrap</span>
+                    <span>Firebase Firestore</span>
+                  </div>
+                  <div class="card-links">
+                    <a href="https://mailbox-client-brown.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://github.com/VinayYadav07/mailbox-client" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- project 4 -->
-          <article class="showcase reverse reveal">
-            <div class="gallery">
-              <img
-                class="gallery-main"
-                src="images/generics-store.webp"
-                alt="E-Commerce Website store page"
-              />
-
-              <div class="thumbs">
-                <img
-                  src="images/generics-store.webp"
-                  alt="Store"
-                  class="active"
-                />
-
-                <img
-                  src="images/generics-merch.webp"
-                  alt="Add to cart and merch"
-                />
-
-                <img src="images/generics-home.webp" alt="Home with tours" />
-
-                <img src="images/generics-signup.webp" alt="Sign up page" />
-              </div>
-            </div>
-
-            <div class="showcase-text">
-              <h3>E-Commerce Website</h3>
-
-              <p class="tagline">
-                Online music store built with the Context API
-              </p>
-
-              <p>
-                An e-commerce site for a music store. Users browse albums and
-                merchandise, view product details, add items to the cart and log
-                in. Cart and login data are shared using the Context API and
-                stored with Firebase.
-              </p>
-
-              <ul class="features">
-                <li>Product list and product detail pages with React Router</li>
-
-                <li>Cart with quantities and total, saved in localStorage</li>
-
-                <li>Login and protected account pages with Firebase</li>
-
-                <li>Contact form and a movies page saved to Firebase</li>
-              </ul>
-
-              <div class="badges small">
-                <span>React</span>
-                <span>Context API</span>
-                <span>React Router</span>
-                <span>React Bootstrap</span>
-                <span>Firebase</span>
+            <!-- project 3 -->
+            <article class="work-card reveal">
+              <div class="code-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="code-file">expense-tracker</span>
               </div>
 
-              <div class="card-links">
-                <a
-                  href="https://the-generics-music-store.vercel.app/"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-primary btn-sm"
-                >
-                  Live Demo
-                </a>
+              <div class="work-body">
+                <div class="gallery">
+                  <img
+                    class="gallery-main"
+                    src="images/expense-list.webp"
+                    alt="Expenses page"
+                  />
+                  <div class="thumbs">
+                    <img src="images/expense-list.webp" alt="Expenses page" class="active" />
+                    <img src="images/expense-home.webp" alt="Home after login" />
+                    <img src="images/expense-dark.webp" alt="Profile in dark mode" />
+                    <img src="images/expense-login.webp" alt="Login page" />
+                  </div>
+                </div>
 
-                <a
-                  href="https://github.com/VinayYadav07/the-generics-music-store"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline btn-sm"
-                >
-                  GitHub
-                </a>
+                <div class="showcase-text">
+                  <h3>Expense Tracker</h3>
+                  <p class="tagline">Personal finance app with Redux Toolkit</p>
+                  <p>
+                    Add, edit and delete daily expenses and watch the total
+                    update. Includes login with password reset, dark mode,
+                    CSV/Excel export and protected routes.
+                  </p>
+                  <ul class="features">
+                    <li>Redux Toolkit slices for auth, expenses, theme and notifications</li>
+                    <li>Firebase Authentication and Realtime Database</li>
+                    <li>Export expenses to CSV and Excel</li>
+                    <li>Light / dark mode with a saved preference</li>
+                  </ul>
+                  <div class="badges small">
+                    <span>React</span>
+                    <span>Redux Toolkit</span>
+                    <span>React Router</span>
+                    <span>React Bootstrap</span>
+                    <span>Firebase</span>
+                  </div>
+                  <div class="card-links">
+                    <a href="https://expense-tracker-mocha-two-67.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://github.com/VinayYadav07/expense-tracker" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+
+            <!-- project 4 -->
+            <article class="work-card reveal">
+              <div class="code-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="code-file">the-generics-music-store</span>
+              </div>
+
+              <div class="work-body">
+                <div class="gallery">
+                  <img
+                    class="gallery-main"
+                    src="images/generics-merch.webp"
+                    alt="Products with Add to Cart"
+                  />
+                  <div class="thumbs">
+                    <img src="images/generics-merch.webp" alt="Products with Add to Cart" class="active" />
+                    <img src="images/generics-store.webp" alt="Store" />
+                    <img src="images/generics-home.webp" alt="Home with tours" />
+                    <img src="images/generics-signup.webp" alt="Sign up page" />
+                  </div>
+                </div>
+
+                <div class="showcase-text">
+                  <h3>E-Commerce Website</h3>
+                  <p class="tagline">Online music store built with the Context API</p>
+                  <p>
+                    An e-commerce site for a music store. Users browse albums and
+                    merchandise, view product details, add items to the cart and
+                    log in. Cart and login data are shared using the Context API
+                    and stored with Firebase.
+                  </p>
+                  <ul class="features">
+                    <li>Product list and product detail pages with React Router</li>
+                    <li>Cart with quantities and total, saved in localStorage</li>
+                    <li>Login and protected account pages with Firebase</li>
+                    <li>Contact form and a movies page saved to Firebase</li>
+                  </ul>
+                  <div class="badges small">
+                    <span>React</span>
+                    <span>Context API</span>
+                    <span>React Router</span>
+                    <span>React Bootstrap</span>
+                    <span>Firebase</span>
+                  </div>
+                  <div class="card-links">
+                    <a href="https://the-generics-music-store.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://github.com/VinayYadav07/the-generics-music-store" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
 
           <!-- github link -->
           <div class="more-projects">
-            <a
-              href="https://github.com/VinayYadav07"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-outline"
-            >
-              See more on GitHub
-            </a>
+            <a href="https://github.com/VinayYadav07" target="_blank" rel="noopener" class="btn btn-outline">See more on GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- experience -->
+      <section class="section gray" id="experience">
+        <div class="container">
+          <div class="section-head-left">
+            <p class="section-label">Experience</p>
+            <h2>Where I've been.</h2>
+          </div>
+
+          <div class="exp-split reveal">
+            <!-- work timeline -->
+            <ol class="timeline">
+              <li class="current">
+                <span class="tl-date">2025 – present</span>
+                <h3>Frontend Developer</h3>
+                <p class="tl-place">Full Stack programme at Sharpener Tech</p>
+                <p>
+                  Built TravelNest, NextMart, Mailbox Client, Expense Tracker
+                  and the E-Commerce Website.
+                </p>
+              </li>
+
+              <li>
+                <span class="tl-date">May 2023 – Aug 2025 · Mumbai</span>
+                <h3>IT Executive</h3>
+                <p class="tl-place">
+                  Fintree Finance, Bombay Stock Exchange, Total Group
+                </p>
+                <p>Hardware, networks, user accounts and support tickets.</p>
+              </li>
+
+              <li>
+                <span class="tl-date">2020 – 2023 · Mumbai</span>
+                <h3>Delivery Executive</h3>
+                <p class="tl-place">Goldmine Logistics</p>
+                <p>
+                  Delivered parcels across Mumbai through the pandemic years,
+                  which taught me planning, punctuality and dealing with people.
+                </p>
+              </li>
+            </ol>
+
+            <!-- education card -->
+            <aside class="edu-box">
+              <h3 class="edu-title">education</h3>
+
+              <div class="edu-item">
+                <span class="tl-date">2016 – 2019</span>
+                <strong>BSc, Information Technology</strong>
+                <span>Vidyalankar School of Information Technology, Mumbai</span>
+              </div>
+
+              <div class="edu-item">
+                <span class="tl-date">2015 – 2016</span>
+                <strong>HSC, Science</strong>
+                <span>
+                  The Andhra Education Society, Mumbai. Physics, Chemistry,
+                  Mathematics and Electronics.
+                </span>
+              </div>
+
+              <div class="edu-item">
+                <span class="tl-date">2013 – 2014</span>
+                <strong>SSC</strong>
+                <span>Sitaram Prakash Higher Secondary School, Mumbai</span>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
 
       <!-- contact -->
-      <section class="section" id="contact">
-        <div class="container contact-inner">
-          <h2 class="section-title">Contact Me</h2>
+      <section class="section contact-hero" id="contact">
+        <div class="container contact-center reveal">
+          <p class="section-label center-label">Contact</p>
 
-          <p>
+          <h2 class="contact-heading">
+            Let's build something
+            <span class="grad-text">worth clicking</span>.
+          </h2>
+
+          <p class="contact-text">
             I'm looking for a frontend developer role. If you have an opening or
             a project in mind, feel free to reach out — I usually reply within a
             day.
           </p>
 
-          <div class="contact-grid reveal">
-            <!-- contact form -->
-            <form class="contact-form" id="contactForm">
-              <label>
-                Your name
+          <a href="mailto:ydavvinay@gmail.com" class="big-email">ydavvinay@gmail.com</a>
 
-                <input
-                  type="text"
-                  id="fromName"
-                  placeholder="Enter your name"
-                  required
-                />
-              </label>
+          <div class="contact-actions">
+            <button type="button" class="btn btn-primary btn-sm" id="copyEmail">
+              Copy email
+            </button>
+            <a href="tel:+918070401290" class="btn btn-outline btn-sm">Call +91 80704 01290</a>
+          </div>
 
-              <label>
-                Your email
+          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
 
-                <input
-                  type="email"
-                  id="fromEmail"
-                  placeholder="you@example.com"
-                  required
-                />
-              </label>
-
-              <label>
-                Message
-
-                <textarea
-                  id="message"
-                  rows="5"
-                  placeholder="Hi Vinay, ..."
-                  required
-                ></textarea>
-              </label>
-
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-
-              <p class="form-note">
-                This opens your email app with the message ready to send.
-              </p>
-            </form>
-
-            <!-- contact details -->
-            <div class="contact-links">
-              <a href="mailto:ydavvinay@gmail.com" class="contact-item">
-                📧 ydavvinay@gmail.com
-              </a>
-
-              <a href="tel:+918070401290" class="contact-item">
-                📞 +91 80704 01290
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/vinay-yadav-593b53329/"
-                target="_blank"
-                rel="noopener"
-                class="contact-item"
-              >
-                💼 LinkedIn
-              </a>
-
-              <a
-                href="https://github.com/VinayYadav07"
-                target="_blank"
-                rel="noopener"
-                class="contact-item"
-              >
-                💻 GitHub
-              </a>
-            </div>
+          <div class="pill-links">
+            <a href="https://github.com/VinayYadav07" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/vinay-yadav-593b53329/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="mailto:ydavvinay@gmail.com">Email</a>
+            <a href="Vinay_Kumar_Yadav_Resume.pdf" download>Resume</a>
           </div>
         </div>
       </section>
@@ -808,39 +731,15 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer-links">
-        <a
-          href="https://github.com/VinayYadav07"
-          target="_blank"
-          rel="noopener"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/vinay-yadav-593b53329/"
-          target="_blank"
-          rel="noopener"
-        >
-          LinkedIn
-        </a>
-
-        <a href="mailto:ydavvinay@gmail.com"> Email </a>
-      </div>
-
       <p>
-        © <span id="year">2026</span>
-        Vinay Kumar Yadav &nbsp;·&nbsp; Frontend Developer — React, Redux
-        Toolkit &amp; Firebase
+        © <span id="year">2026</span> Vinay Kumar Yadav &nbsp;·&nbsp; Frontend
+        Developer — React, Next.js, Redux Toolkit &amp; Firebase
       </p>
-
       <p class="made-in">Made with ❤️ in Mumbai</p>
     </footer>
 
     <!-- back to top button -->
-    <button class="to-top" id="toTop" type="button" aria-label="Back to top">
-      ↑
-    </button>
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
 
     <!-- javascript file -->
     <script src="script.js"></script>

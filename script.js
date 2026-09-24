@@ -1,5 +1,5 @@
 // Portfolio JavaScript
-// Dark mode, menu, typing effect, projects and contact form
+// Dark mode, menu, typing effect, projects and copy email
 
 // Dark mode
 const themeBtn = document.getElementById("themeBtn");
@@ -120,23 +120,46 @@ function type() {
 
 setTimeout(type, 1200);
 
-// Project gallery
+// Project gallery (click small image, or it changes on its own)
+const reduceMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+).matches;
+
 document.querySelectorAll(".gallery").forEach((gallery) => {
   const mainImg = gallery.querySelector(".gallery-main");
   const thumbs = gallery.querySelectorAll(".thumbs img");
+  let current = 0;
+  let paused = false;
 
-  thumbs.forEach((thumb) => {
+  function showImage(index) {
+    current = index;
+    mainImg.src = thumbs[index].src;
+    mainImg.alt = thumbs[index].alt;
+
+    thumbs.forEach((t) => {
+      t.classList.remove("active");
+    });
+
+    thumbs[index].classList.add("active");
+  }
+
+  thumbs.forEach((thumb, index) => {
     thumb.addEventListener("click", () => {
-      mainImg.src = thumb.src;
-      mainImg.alt = thumb.alt;
-
-      thumbs.forEach((t) => {
-        t.classList.remove("active");
-      });
-
-      thumb.classList.add("active");
+      showImage(index);
     });
   });
+
+  // stop auto change while mouse is on the gallery
+  gallery.addEventListener("mouseenter", () => (paused = true));
+  gallery.addEventListener("mouseleave", () => (paused = false));
+
+  if (!reduceMotion && thumbs.length > 1) {
+    setInterval(() => {
+      if (!paused) {
+        showImage((current + 1) % thumbs.length);
+      }
+    }, 3500);
+  }
 });
 
 // Scroll animation
@@ -161,21 +184,21 @@ revealItems.forEach((item) => {
   observer.observe(item);
 });
 
-// Contact form
-const contactForm = document.getElementById("contactForm");
+// Copy email button
+const copyBtn = document.getElementById("copyEmail");
+const copyStatus = document.getElementById("copyStatus");
 
-contactForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+copyBtn.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText("ydavvinay@gmail.com");
+    copyStatus.textContent = "Email copied.";
+  } catch (error) {
+    copyStatus.textContent = "Copy didn't work. Email: ydavvinay@gmail.com";
+  }
 
-  const name = document.getElementById("fromName").value.trim();
-  const email = document.getElementById("fromEmail").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  const subject = encodeURIComponent(`Portfolio message from ${name}`);
-
-  const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-
-  window.location.href = `mailto:ydavvinay@gmail.com?subject=${subject}&body=${body}`;
+  setTimeout(() => {
+    copyStatus.textContent = "";
+  }, 2500);
 });
 
 // Footer year
