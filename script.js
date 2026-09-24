@@ -84,6 +84,7 @@ const typedEl = document.getElementById("typed");
 
 const roles = [
   "Frontend Developer",
+  "Web Developer",
   "React.js Developer",
   "JavaScript Developer",
   "Full Stack Learner",
