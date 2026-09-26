@@ -1,21 +1,42 @@
-# Vinay Kumar Yadav — Portfolio
+# Vinay Kumar Yadav - Portfolio
 
-My personal portfolio website built using HTML, CSS and JavaScript.
+This is my personal portfolio website made with HTML, CSS and JavaScript.
+It shows my projects, skills, experience and resume.
+
+**Live Link:** https://portfolio-rho-red-54.vercel.app
+
+## Sections
+
+- Home with typing effect and a small code card
+- About me
+- Skills
+- Projects (AI Mailbox, TravelNest, NextMart, Expense Tracker, E-Commerce Website)
+- Experience and education
+- Contact with copy email button and resume download
+
+## Features
+
+- Dark mode and light mode
+- Responsive design for mobile and laptop
+- Project screenshots change on their own, and you can click small images
+- Smooth scroll animation
+- Back to top button
 
 ## Files
 
-- `index.html` – Website content
-- `style.css` – Website styling and responsive design
-- `script.js` – Dark mode, menu, typing effect, auto-changing project screenshots and copy email
-- `images/` – Profile photo and project images
-- `Vinay_Kumar_Yadav_Resume.pdf` – Resume
+- `index.html` - page content
+- `style.css` - design and mobile layout
+- `script.js` - dark mode, menu, typing effect, project images and copy email
+- `images/` - project screenshots
+- `Vinay_Kumar_Yadav_Resume.pdf` - my resume
 
-## Run
+## How to Run
 
-Open `index.html` in your browser.
+Open `index.html` in browser, or use the Live Server extension in VS Code.
 
-You can also use the VS Code Live Server extension.
+## Made By
 
-## Live
+**Vinay Kumar Yadav**
 
-The portfolio is deployed on Vercel.
+- LinkedIn: https://www.linkedin.com/in/vinay-yadav-593b53329
+- GitHub: https://github.com/VinayYadav07

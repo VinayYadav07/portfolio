@@ -652,17 +652,6 @@ button:focus-visible {
   color: #75b798;
 }
 
-/* About side */
-.about-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  border: 5px solid var(--bg);
-  box-shadow: var(--shadow);
-}
-
 /* Skill cards */
 .skill-code {
   display: inline-flex;
@@ -932,11 +921,6 @@ button:focus-visible {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.about-left .about-photo {
-  width: 120px;
-  height: 120px;
 }
 
 .about-right p {
@@ -1224,7 +1208,7 @@ button:focus-visible {
   margin-top: 10px;
 }
 
-/* About photo: bigger, with the same blue ring as the old home photo */
+/* About left side */
 .about-left {
   position: sticky;
   top: 100px;
@@ -1232,31 +1216,6 @@ button:focus-visible {
 
 .about-left .section-head-left {
   margin-bottom: 36px;
-}
-
-.about-photo-wrap {
-  position: relative;
-  width: 210px;
-  height: 210px;
-  margin-left: 14px;
-}
-
-.about-photo-wrap::before {
-  content: "";
-  position: absolute;
-  inset: -12px;
-  border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    rgba(13, 110, 253, 0.3),
-    rgba(13, 110, 253, 0.05)
-  );
-}
-
-.about-left .about-photo-wrap .about-photo {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .about-right {
@@ -1275,12 +1234,6 @@ button:focus-visible {
 
   .about-left .section-label {
     justify-content: center;
-  }
-
-  .about-photo-wrap {
-    width: 170px;
-    height: 170px;
-    margin: 0 auto 10px;
   }
 }
 

@@ -143,7 +143,8 @@
   city: <span class="s">'Mumbai'</span>,
   stack: [
     <span class="s">'React.js'</span>, <span class="s">'Next.js'</span>,
-    <span class="s">'Redux Toolkit'</span>, <span class="s">'Firebase'</span>
+    <span class="s">'Redux Toolkit'</span>, <span class="s">'Firebase'</span>,
+    <span class="s">'Gemini AI'</span>
   ],
   before: <span class="s">'2.6 years as IT Executive'</span>,
   learning: <span class="s">'Full Stack @ Sharpener Tech'</span>,
@@ -181,13 +182,6 @@
                 </h2>
               </div>
 
-              <div class="about-photo-wrap">
-                <img
-                  src="images/vinay.jpg"
-                  alt="Vinay Kumar Yadav"
-                  class="about-photo"
-                />
-              </div>
             </div>
 
             <div class="about-right">
@@ -196,7 +190,7 @@
                 responsive web applications with React, Next.js, Redux Toolkit
                 and Firebase, and I have built and deployed five projects: a travel
                 booking platform with an admin panel, a Next.js products store
-                with JWT login, a mailbox client, an expense tracker and an
+                with JWT login, an AI mailbox, an expense tracker and an
                 e-commerce store. I enjoy turning a design
                 into a clean, working interface and I care about small details
                 like <strong>loading states, validation and error handling</strong>.
@@ -214,7 +208,7 @@
               <dl class="now-table">
                 <div>
                   <dt>building</dt>
-                  <dd>TravelNest, a travel booking site with an admin panel</dd>
+                  <dd>AI Mailbox, a mail app where AI finds tasks and deadlines</dd>
                 </div>
 
                 <div>
@@ -278,7 +272,7 @@
                 <span>Firestore</span>
                 <span>JWT (jose)</span>
                 <span>REST APIs</span>
-                <span>Axios</span>
+                <span>Gemini AI API</span>
               </div>
             </div>
 
@@ -290,6 +284,7 @@
                 <span>Git</span>
                 <span>GitHub</span>
                 <span>Vite</span>
+                <span>Vitest</span>
                 <span>VS Code</span>
                 <span>Vercel</span>
               </div>
@@ -334,14 +329,69 @@
           </div>
 
           <div class="work-list">
-            <!-- project 1 -->
+            <!-- project 1: AI Mailbox -->
             <article class="work-card featured reveal">
               <div class="code-bar">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <span class="code-file">travelnest</span>
+                <span class="code-file">ai-mailbox</span>
                 <span class="tag">Featured project</span>
+              </div>
+
+              <div class="work-body">
+                <div class="gallery">
+                  <img
+                    class="gallery-main"
+                    src="images/aimailbox-read-mail.webp"
+                    alt="AI insights for a mail"
+                  />
+                  <div class="thumbs">
+                    <img src="images/aimailbox-read-mail.webp" alt="AI insights for a mail" class="active" />
+                    <img src="images/aimailbox-inbox.webp" alt="Inbox with AI priority" />
+                    <img src="images/aimailbox-briefing.webp" alt="Daily briefing" />
+                    <img src="images/aimailbox-reply.webp" alt="AI smart reply" />
+                  </div>
+                </div>
+
+                <div class="showcase-text">
+                  <h3>AI Mailbox</h3>
+                  <p class="tagline">Mail app where AI reads every mail and finds the work</p>
+                  <p>
+                    This is the AI version of my mailbox app. Users send and
+                    receive mails, and Gemini AI gives a summary, priority,
+                    tasks, deadlines and meetings for every mail. It can also
+                    write a reply in the tone you want.
+                  </p>
+                  <ul class="features">
+                    <li>AI summary and priority for every mail (Urgent, Important, Normal)</li>
+                    <li>Finds tasks, deadlines and meetings, with a daily briefing page</li>
+                    <li>Smart reply with tone changer (Professional, Friendly, Concise)</li>
+                    <li>API key stays on the server, offline rules work if AI is down</li>
+                  </ul>
+                  <div class="badges small">
+                    <span>React</span>
+                    <span>Firebase</span>
+                    <span>Firestore</span>
+                    <span>Gemini AI</span>
+                    <span>Context API</span>
+                    <span>Vercel</span>
+                  </div>
+                  <div class="card-links">
+                    <a href="https://ai-mailbox-eight.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://github.com/VinayYadav07/ai-mailbox" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- project 2: TravelNest -->
+            <article class="work-card reveal">
+              <div class="code-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="code-file">travelnest</span>
               </div>
 
               <div class="work-body">
@@ -357,7 +407,6 @@
                     <img src="images/travelnest-detail.webp" alt="Property detail" />
                     <img src="images/travelnest-bookings.webp" alt="My Bookings" />
                     <img src="images/travelnest-admin.webp" alt="Admin dashboard" />
-                    <img src="images/travelnest-admin-login.webp" alt="Admin login" />
                   </div>
                 </div>
 
@@ -382,7 +431,6 @@
                     <span>React</span>
                     <span>React Router</span>
                     <span>Bootstrap</span>
-                    <span>Axios</span>
                     <span>Firebase</span>
                   </div>
                   <div class="card-links">
@@ -395,7 +443,7 @@
               </div>
             </article>
 
-            <!-- project 2: NextMart -->
+            <!-- project 3: NextMart -->
             <article class="work-card reveal">
               <div class="code-bar">
                 <span class="dot"></span>
@@ -450,64 +498,7 @@
               </div>
             </article>
 
-            <!-- project 3 -->
-            <article class="work-card reveal">
-              <div class="code-bar">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="code-file">mailbox-client</span>
-              </div>
-
-              <div class="work-body">
-                <div class="gallery">
-                  <img
-                    class="gallery-main"
-                    src="images/mailbox-compose.webp"
-                    alt="Compose mail with rich text editor"
-                  />
-                  <div class="thumbs">
-                    <img src="images/mailbox-compose.webp" alt="Compose mail with rich text editor" class="active" />
-                    <img src="images/mailbox-inbox.webp" alt="Inbox with unread count and folders" />
-                    <img src="images/mailbox-sent.webp" alt="Sent mail" />
-                    <img src="images/mailbox-login.webp" alt="Login page" />
-                  </div>
-                </div>
-
-                <div class="showcase-text">
-                  <h3>Mailbox Client</h3>
-                  <p class="tagline">
-                    Email app to send and receive mail between registered users
-                  </p>
-                  <p>
-                    A responsive email application built with React and
-                    Firebase. Users create an account, log in, compose and send
-                    mail to other registered users, read their inbox and check
-                    their sent mail.
-                  </p>
-                  <ul class="features">
-                    <li>Compose with To, Cc/Bcc, subject and a rich text editor</li>
-                    <li>Inbox with unread count, read and delete mail, Sent, Starred, Drafts and custom folders</li>
-                    <li>Auth and mail state handled with the Context API and a custom hook</li>
-                    <li>Firebase Authentication and Firestore, protected routes, config kept in environment variables</li>
-                  </ul>
-                  <div class="badges small">
-                    <span>React</span>
-                    <span>Vite</span>
-                    <span>Context API</span>
-                    <span>React Router</span>
-                    <span>React Bootstrap</span>
-                    <span>Firebase Firestore</span>
-                  </div>
-                  <div class="card-links">
-                    <a href="https://mailbox-client-brown.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
-                    <a href="https://github.com/VinayYadav07/mailbox-client" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <!-- project 3 -->
+            <!-- project 4: Expense Tracker -->
             <article class="work-card reveal">
               <div class="code-bar">
                 <span class="dot"></span>
@@ -536,21 +527,20 @@
                   <p class="tagline">Personal finance app with Redux Toolkit</p>
                   <p>
                     Add, edit and delete daily expenses and watch the total
-                    update. Includes login with password reset, dark mode,
-                    CSV/Excel export and protected routes.
+                    update. Includes login with password reset, email
+                    verification, dark mode and CSV download for premium users.
                   </p>
                   <ul class="features">
-                    <li>Redux Toolkit slices for auth, expenses, theme and notifications</li>
+                    <li>Redux Toolkit slices for auth, expenses, theme and ui</li>
                     <li>Firebase Authentication and Realtime Database</li>
-                    <li>Export expenses to CSV and Excel</li>
-                    <li>Light / dark mode with a saved preference</li>
+                    <li>Premium unlocks after ₹10,000 total, with CSV download</li>
+                    <li>20 test cases with Vitest and React Testing Library</li>
                   </ul>
                   <div class="badges small">
                     <span>React</span>
                     <span>Redux Toolkit</span>
-                    <span>React Router</span>
-                    <span>React Bootstrap</span>
                     <span>Firebase</span>
+                    <span>Vitest</span>
                   </div>
                   <div class="card-links">
                     <a href="https://expense-tracker-mocha-two-67.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
@@ -560,7 +550,7 @@
               </div>
             </article>
 
-            <!-- project 4 -->
+            <!-- project 5: E-Commerce -->
             <article class="work-card reveal">
               <div class="code-bar">
                 <span class="dot"></span>
@@ -597,7 +587,7 @@
                     <li>Product list and product detail pages with React Router</li>
                     <li>Cart with quantities and total, saved in localStorage</li>
                     <li>Login and protected account pages with Firebase</li>
-                    <li>Contact form and a movies page saved to Firebase</li>
+                    <li>Movies page and contact form using Firebase Realtime Database</li>
                   </ul>
                   <div class="badges small">
                     <span>React</span>
@@ -633,27 +623,29 @@
           <div class="exp-split reveal">
             <!-- work timeline -->
             <ol class="timeline">
-              <li class="current">
-                <span class="tl-date">2025 – present</span>
-                <h3>Frontend Developer</h3>
-                <p class="tl-place">Full Stack programme at Sharpener Tech</p>
-                <p>
-                  Built TravelNest, NextMart, Mailbox Client, Expense Tracker
-                  and the E-Commerce Website.
-                </p>
-              </li>
-
               <li>
-                <span class="tl-date">May 2023 – Aug 2025 · Mumbai</span>
+                <span class="tl-date">Feb 2025 – Aug 2025 · Mumbai</span>
                 <h3>IT Executive</h3>
-                <p class="tl-place">
-                  Fintree Finance, Bombay Stock Exchange, Total Group
-                </p>
-                <p>Hardware, networks, user accounts and support tickets.</p>
+                <p class="tl-place">Total Group</p>
+                <p>Hardware, software and network issues, GPS tracking and fleet software support.</p>
               </li>
 
               <li>
-                <span class="tl-date">2020 – 2023 · Mumbai</span>
+                <span class="tl-date">Jul 2024 – Feb 2025 · Mumbai</span>
+                <h3>IT Executive</h3>
+                <p class="tl-place">Bombay Stock Exchange (BSE)</p>
+                <p>Reports and dashboards with Excel and basic SQL, user support.</p>
+              </li>
+
+              <li>
+                <span class="tl-date">May 2023 – Jul 2024 · Mumbai</span>
+                <h3>IT Executive</h3>
+                <p class="tl-place">Fintree Finance</p>
+                <p>Technical support, system setup, user access and software setup.</p>
+              </li>
+
+              <li>
+                <span class="tl-date">Sep 2020 – Mar 2023 · Mumbai</span>
                 <h3>Delivery Executive</h3>
                 <p class="tl-place">Goldmine Logistics</p>
                 <p>
@@ -666,6 +658,12 @@
             <!-- education card -->
             <aside class="edu-box">
               <h3 class="edu-title">education</h3>
+
+              <div class="edu-item">
+                <span class="tl-date">2025 – Present</span>
+                <strong>Full Stack Web Development</strong>
+                <span>Sharpener Tech (in progress)</span>
+              </div>
 
               <div class="edu-item">
                 <span class="tl-date">2016 – 2019</span>
